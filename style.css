@@ -81,7 +81,8 @@ body {
     transition: .3s;
 }   
 
-.input input:focus ~ label {
+/* fixbug for IMBIT（1448214956） */
+.hasValue ~ label, input:focus ~ label {
     top: -50%;
     font-size: .9rem;
 }
